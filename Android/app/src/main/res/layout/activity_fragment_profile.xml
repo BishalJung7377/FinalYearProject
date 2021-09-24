@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragmenthomebackground"
+    android:paddingBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgbackIcn"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="12dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="-39dp"
+            android:fontFamily="@font/comfortaabold"
+            android:text="Profile Info"
+            android:textAlignment="center"
+            android:textColor="#363636"
+            android:textSize="35dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#E5FCC2"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/userprofileimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/noimg"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tvuserprofilename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/userprofileimage"
+                android:fontFamily="@font/comfortaamedium"
+                android:includeFontPadding="false"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/EditPassword"
+                android:layout_width="188dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="203dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginEnd="0dp"
+                android:fontFamily="@font/comfortaamedium"
+                android:hint="Edit Password?"
+                android:includeFontPadding="false"
+                android:textAlignment="center"
+                android:textColor="#ff5349"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvuserprofileemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvuserprofilename"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/userprofileimage"
+                android:fontFamily="@font/comfortaamedium"
+                android:includeFontPadding="false"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:padding="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/totalitemcrdview"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="#FE4365"
+                app:cardElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/itemCardView"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/noimg" />
+
+                    <TextView
+                        android:id="@+id/tvuseritems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/comfortaamedium"
+                        android:includeFontPadding="false"
+                        android:text="Total Cart Items"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvitemnumbers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvuseritems"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/comfortaamedium"
+                        android:includeFontPadding="false"
+                        android:textStyle="bold"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tveditFname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:hint="Full Name"
+                android:padding="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eteditFname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:padding="10dp"
+                    android:text="  " />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tveditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:hint="Email"
+                android:padding="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eteditEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:editable="false"
+                    android:padding="10dp"
+                    android:text=" " />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/tveditpass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="0dp"-->
+<!--                android:hint="Password"-->
+<!--                android:padding="12dp">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/eteditpass"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:height="40dp"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text=" " />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tveditnumb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:hint="Phone Number"
+                android:padding="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/eteditnumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="40dp"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text=" " />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2F9599"
+                android:fontFamily="@font/comfortaabold"
+                android:text="Update"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+</layout>
+
+
+    <!--Line  112  ma halney vaye tyaha halney -->
+    <!--            <com.google.android.material.card.MaterialCardView-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="125dp"-->
+    <!--                android:layout_margin="10dp"-->
+    <!--                android:layout_weight="1"-->
+    <!--                app:cardBackgroundColor="#FE4365"-->
+    <!--                app:cardElevation="10dp">-->
+
+    <!--                <RelativeLayout-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="match_parent"-->
+    <!--                    android:padding="5dp">-->
+
+    <!--                    <ImageView-->
+    <!--                        android:id="@+id/"-->
+    <!--                        android:layout_width="30dp"-->
+    <!--                        android:layout_height="30dp"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:src="@drawable/noimg" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/tvscndcardview"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_centerInParent="true"-->
+    <!--                        android:fontFamily="@font/comfortaamedium"-->
+    <!--                        android:includeFontPadding="false"-->
+    <!--                        android:text="Bishal"-->
+    <!--                        android:textSize="20sp" />-->
+
+    <!--                    <TextView-->
+    <!--                        android:id="@+id/tvsecondcardview"-->
+    <!--                        android:layout_width="wrap_content"-->
+    <!--                        android:layout_height="wrap_content"-->
+    <!--                        android:layout_below="@+id/tvscndcardview"-->
+    <!--                        android:layout_centerHorizontal="true"-->
+    <!--                        android:fontFamily="@font/comfortaamedium"-->
+    <!--                        android:includeFontPadding="false"-->
+    <!--                        android:text="Jung Thapa"-->
+    <!--                        android:textSize="15sp" />-->
+    <!--                </RelativeLayout>-->
+    <!--            </com.google.android.material.card.MaterialCardView>-->

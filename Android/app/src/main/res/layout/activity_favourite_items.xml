@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#F4E2D8"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/tvAvailableYes2"
+        android:layout_width="76dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comfortaamedium"
+        android:text="Delete"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toEndOf="@+id/imgfavouriteitem"
+        app:layout_constraintTop_toBottomOf="@+id/imgfavouritecart" />
+
+    <ImageView
+        android:id="@+id/imgfavouritedelete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+
+        android:layout_marginTop="96dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toEndOf="@+id/tvAvailableYes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvfavouritePrice"
+        android:layout_width="82dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="12dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaamedium"
+        android:hint="$400"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toEndOf="@+id/imgfavouriteitem"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemname" />
+
+    <ImageView
+        android:id="@+id/imgfavouriteitem"
+        android:layout_width="157dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imgfavouritecart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="92dp"
+        android:src="@drawable/ic_addtocart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/imgfavouriteitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAvailableYes"
+        android:layout_width="76dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comfortaamedium"
+        android:text="Move to Cart"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toEndOf="@+id/imgfavouriteitem"
+        app:layout_constraintTop_toBottomOf="@+id/imgfavouritecart" />
+
+    <TextView
+        android:id="@+id/tvitemname"
+        android:layout_width="161dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="16dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaabold"
+        android:text="Item Name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toEndOf="@+id/imgfavouriteitem"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

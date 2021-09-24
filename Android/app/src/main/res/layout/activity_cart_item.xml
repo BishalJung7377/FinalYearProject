@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:background="#bfe6ba"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tvCheckout"
+        android:layout_width="79dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="124dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaamedium"
+        android:text="Check out"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemname" />
+
+    <TextView
+        android:id="@+id/tvCheckout2"
+        android:layout_width="79dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="124dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaamedium"
+        android:text="Delete"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemname" />
+
+    <TextView
+        android:id="@+id/tvColorName"
+        android:layout_width="55dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/comfortaalight"
+        android:text="Color:"
+        android:textAlignment="center"
+        android:textColor="#232526"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCartColor"
+        android:layout_width="79dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="50dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaamedium"
+        android:hint="Color"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemname" />
+
+    <ImageView
+        android:id="@+id/imgitemcancel"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_delete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvitemprice"
+        android:layout_width="106dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaamedium"
+        android:hint="$400"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toBottomOf="@+id/tvitemname" />
+
+    <ImageView
+        android:id="@+id/imgitemimage"
+        android:layout_width="157dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/tvCheckOut"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/ic_checkout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvitemname"
+        android:layout_width="151dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comfortaabold"
+        android:text="Item Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toEndOf="@+id/imgitemimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
